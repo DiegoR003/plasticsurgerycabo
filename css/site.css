@@ -246,3 +246,57 @@ body{
   .psc-footer .footer-brand img{ max-width:200px; }
   .footer-map iframe{ height:160px; }
 }
+
+/* ===== Carrusel de aliados / partners ===== */
+.partners-section{
+  padding-top: 40px; padding-bottom: 40px;
+  background: linear-gradient(180deg, #eaf3ef 0%, #e2ece9 100%); /* sutil como tu ejemplo */
+}
+.partners-title{
+  font-weight: 700; color:#277a3b; /* verde sobrio; cámbialo si prefieres */
+  margin-bottom: 18px; text-transform:none;
+}
+
+.partners-slider .slick-slide{
+  margin: 0 14px;
+}
+.partners-slider img{
+  height: 54px;               /* ajusta al alto que te guste */
+  width: auto; display:block; margin: 0 auto;
+  filter: grayscale(100%); opacity:.85; transition: .2s ease;
+}
+.partners-slider img:hover{
+  filter: grayscale(0%); opacity:1;
+}
+
+/* Flechas redondas estilo captura */
+.partners-slider .slick-prev,
+.partners-slider .slick-next{
+  width: 42px; height: 42px; border-radius: 50%;
+  background: #8f9aa1; border: 0; outline: 0;
+  position: absolute; top: 50%; transform: translateY(-50%);
+  z-index: 2; opacity:.9; cursor:pointer;
+}
+.partners-slider .slick-prev{ left: -6px; }
+.partners-slider .slick-next{ right: -6px; }
+
+/* Iconos de chevron usando pseudo-elemento */
+.partners-slider .slick-prev::before,
+.partners-slider .slick-next::before{
+  color: #fff; font-size: 22px; line-height: 42px;
+}
+.partners-slider .slick-prev::before{ content: "‹"; }
+.partners-slider .slick-next::before{ content: "›"; }
+
+/* Dots desactivados por ahora, pero si los activas: */
+.partners-slider .slick-dots li button:before{ color:#6b7280; }
+
+/* Responsive: más grande en desktop, compacto en móvil */
+@media (max-width: 991.98px){
+  .partners-slider img{ height: 48px; }
+}
+@media (max-width: 575.98px){
+  .partners-slider img{ height: 44px; }
+  .partners-slider .slick-prev{ left: -2px; }
+  .partners-slider .slick-next{ right: -2px; }
+}
