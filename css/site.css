@@ -353,6 +353,65 @@ body{ font-family: var(--ff-body); color:var(--ink); letter-spacing: .1px; }
   padding:.35rem .6rem;border-radius:999px;margin-right:.4rem;margin-bottom:.4rem;
 }
 
+/* =================================== */
+/* CSS para Galería Antes y Después    */
+/* =================================== */
+
+.galeria-antes-despues {
+  display: grid;
+  /* Esto crea las columnas automáticas.
+     Le dice al navegador: "Crea columnas que midan 
+     como mínimo 300px y como máximo 1fr (una fracción 
+     del espacio disponible)". 
+     Esto hace que sea responsive.
+  */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px; /* Este es el espacio entre cada tarjeta */
+}
+
+.caso-card {
+  background-color: #ffffff; /* Fondo blanco para la tarjeta */
+  border: 1px solid #eaeaea; /* Borde gris muy claro */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Sombra suave */
+  overflow: hidden; /* Importante para que la imagen respete los bordes redondeados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al pasar el mouse */
+}
+
+.caso-card:hover {
+  transform: translateY(-5px); /* Levanta la tarjeta al pasar el mouse */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); /* Sombra más pronunciada */
+}
+
+.caso-card__media {
+  line-height: 0; /* Corrige un espacio extra que a veces aparece bajo las imágenes */
+}
+
+.caso-card__media img,
+.caso-card__media video {
+  width: 100%;  /* <-- ESTA ES LA REGLA QUE HACE QUE "ENCAJE" */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block;
+}
+
+.caso-card__body {
+  padding: 25px; /* Espacio interno para el texto */
+}
+
+.caso-card__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.caso-card__body p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
 /* =============================
    Secciones
 ============================= */
@@ -725,3 +784,4 @@ body{ font-family: var(--ff-body); color:var(--ink); letter-spacing: .1px; }
 .btn:hover .fa-arrow-right {
   transform: translateX(5px); /* Mueve la flecha 5px a la derecha */
 }
+
