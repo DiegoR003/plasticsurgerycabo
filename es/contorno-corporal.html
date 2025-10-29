@@ -6,19 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Procedimientos de contorno corporal en Los Cabos, incluyendo Abdominoplastia, Liposucción y Lipotransferencia.">
 
-  <link rel="stylesheet" type="text/css" href="../style.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/font-awesome.min.css">
-  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  
-  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4/animate.min.css">
-
   <link rel="stylesheet" href="../css/site.css">
-  <link rel="alternate" hreflang="en" href="../en/contorno-corporal.html">
 </head>
 
 <body>
@@ -52,7 +43,7 @@
         <li class="nav-item"><a class="nav-link" href="./contacto.php">CONTACTO</a></li>
         <li class="nav-item d-none d-lg-inline px-3"><span class="divider"></span></li>
         <li class="nav-item">
-          <a class="nav-link icon-idioma d-flex align-items-center" href="../en/contorno-corporal.html">
+          <a class="nav-link icon-idioma d-flex align-items-center" href="../en/body-contouring.html">
             <img src="../images/bandera_eeuu.png" width="30px" alt="mex"><span>EN</span>
           </a>
         </li>
@@ -232,98 +223,16 @@
   <i class="fa fa-whatsapp"></i>
 </a>
 
+<script src="../js/site.js"></script>
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script src="../js/wow.min.js"></script>
-
-<script src="../js/site.js"></script>
-
 <script>
-  new WOW({
-    boxClass: 'wow',
-    // animateClass: 'animate__animated', // <-- Comentado como debe ser
-    offset: 120,
-    mobile: true,
-    live: true
-  }).init();
-</script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  var el = document.querySelector('.brands-swiper');
-  if (!el) return;
-  
-  // ... (código del carrusel de logos) ...
-  
-  new Swiper('.brands-swiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 24,
-    loop: true,
-    allowTouchMove: false,
-    speed: 7000,
-    autoplay: { delay: 0, disableOnInteraction: false },
-    freeMode: true,
-    freeModeMomentum: false
-  });
+document.addEventListener('DOMContentLoaded', function(){
+  if (typeof WOW !== 'undefined') {
+    new WOW({ offset: 30, mobile: true, live: true }).init();
+  }
 });
-</script>
-
-<script>
-(function(){
-  const mapa = {
-    'facial': ['Ritidectomía (Facelift)', /* ... otros ... */],
-    'corporal': [
-      'Aumento Mamario (Breast Augmentation)',
-      'Mastopexia (Breast Lift)',
-      'Mamoplastia de Reducción (Breast Reduction)',
-      'Abdominoplastia', //
-      'Liposucción', //
-      'Lipotrasferencia', //
-      'Rejuvenecimiento Vaginal' //
-    ],
-    'no-invasivos': ['Botox®', 'Rellenos', /* ... otros ... */]
-  };
-
-  const interes = document.getElementById('interes');
-  const subWrap = document.getElementById('subinteres-wrap');
-  const sub = document.getElementById('subinteres');
-
-  function poblarSub(opciones){
-    sub.innerHTML = '';
-    const def = document.createElement('option');
-    def.value = '';
-    def.textContent = 'No estoy seguro / Otro';
-    sub.appendChild(def);
-
-    (opciones || []).forEach(txt => {
-      const opt = document.createElement('option');
-      opt.value = txt;
-      opt.textContent = txt;
-      sub.appendChild(opt);
-    });
-  }
-
-  interes.addEventListener('change', () => {
-    const val = interes.value;
-    if (mapa[val]) {
-      poblarSub(mapa[val]);
-      subWrap.style.display = 'block';
-    } else {
-      subWrap.style.display = 'none';
-      poblarSub([]);
-    }
-  });
-
-  // Para que se ejecute al cargar la página (ya que pre-seleccionamos 'corporal')
-  if (mapa[interes.value]) {
-    poblarSub(mapa[interes.value]);
-    subWrap.style.display = 'block';
-  }
-})();
-</script>
 </script>
 
 <script>

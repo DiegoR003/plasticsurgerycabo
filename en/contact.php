@@ -1,378 +1,392 @@
 <!DOCTYPE html>
-<html lang="zxx">
-    
-    
+<html lang="en">
 <head>
-        <!-- meta tag -->
-        <meta charset="utf-8">
-        <title>Dr. Cantú</title>
-        <meta name="description" content="">
-        <!-- responsive tag -->
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- favicon -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.html">
-        <link rel="shortcut icon" type="image/x-icon" href="images/fav.png">
-        <!-- bootstrap v3.3.7 css -->
-        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-        <!-- font-awesome css -->
-        <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
-        <!-- animate css -->
-        <link rel="stylesheet" type="text/css" href="../css/animate.css">
-        <!-- owl.carousel css -->
-        <link rel="stylesheet" type="text/css" href="../css/owl.carousel.css">
-        <!-- slick css -->
-        <link rel="stylesheet" type="text/css" href="../css/slick.css">
-        <!-- off canvas css -->
-        <link rel="stylesheet" type="text/css" href="../css/off-canvas.css">
-        <!-- linea-font css -->
-        <link rel="stylesheet" type="text/css" href="../fonts/linea-fonts.css">
-        <!-- flaticon css  -->
-        <link rel="stylesheet" type="text/css" href="../fonts/flaticon.css">
-        <!-- nivo slider CSS -->
-        <link rel="stylesheet" type="text/css" href="../inc/custom-slider/css/nivo-slider.css">
-        <link rel="stylesheet" type="text/css" href="../inc/custom-slider/css/preview.css">
-        <!-- magnific popup css -->
-        <link rel="stylesheet" type="text/css" href="../css/magnific-popup.css">
-        <!-- Main Menu css -->
-        <link rel="stylesheet" href="../css/rsmenu-main.css">
-        <!-- rsmenu transitions css -->
-        <link rel="stylesheet" href="../css/rsmenu-transitions.css">
-        <!-- spacing css -->
-        <link rel="stylesheet" type="text/css" href="../css/rs-spacing.css">
-        <!-- style css -->
-        <link rel="stylesheet" type="text/css" href="../style.css"> <!-- This stylesheet dynamically changed from style.less -->
-        <!-- responsive css -->
-        <link rel="stylesheet" type="text/css" href="../css/responsive.css">
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        
-        <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KBS3RKT7');</script>
-<!-- End Google Tag Manager -->
-    </head>
-    
-    <style>
-#whatsapp {
-    position: fixed;
-    z-index: 999;
-    width: 4rem;
-    bottom: 110px;
-    right: 10px;
-    display: -webkit-inline-box;
-}
+  <meta charset="utf-8">
+  <title>Contact | Plastic Surgery Cabo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Schedule your consultation. Contact us via WhatsApp, Email, or visit our clinic in Cabo San Lucas.">
 
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4/animate.min.css">
+  <link rel="stylesheet" href="../css/site.css">
 
-.whats-float {
-    position: fixed;
-    transform: translate(108px, 0px);
-    top: 250px;
-    right: 0;
-    width: 150px;
-    overflow: hidden;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 2px 0 0 2px;
-    z-index: 10;
-    transition: all 0.5s ease-in-out;
-    vertical-align: middle
-}
-
-.whats-float a span {
-    color: white;
-    font-size: 15px;
-    padding-top: 8px;
-    padding-bottom: 10px;
-    position: absolute;
-    line-height: 16px;
-    font-weight: bolder;
-}
-
-.whats-float i {
-    font-size: 30px;
-    color: white;
-    line-height: 30px;
-    padding: 10px;
-    transform: rotate(0deg);
-    transition: all 0.5s ease-in-out;
-    text-align: center;
-
-}
-
-.whats-float:hover {
-    color: #FFFFFF;
-    transform: translate(0px, 0px);
-}
-
-.whats-float:hover i {
-    transform: rotate(360deg);
-}
-
-/* ********************************* */
-.margen-menu {
-    margin: 0 150px;
-}
-
-.logo-home {
-    max-width: 200px
-}
-
-@media (max-width: 800px) {
-    .margen-menu {
-        margin: 0px;
+  <style>
+    /* --- Estilos para el Hero de Contacto --- */
+    .hero-breadcrumb {
+      color: #fff;
+      opacity: 0.8;
+      font-size: 0.9rem;
     }
-
-    .logo-home {
-        max-width: 200px
+    .hero-breadcrumb a {
+      color: #fff;
+      text-decoration: none;
     }
-}
-</style>
+    .hero-breadcrumb a:hover {
+      text-decoration: underline;
+    }
     
-    
-    <body class="defult-home">
-        
-        <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBS3RKT7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-        
-<div class="whats-float">
-    <a href="https://wa.me/+526241573674?text=Hola%20me%20gustaría%20agendar%20una%20cita."
-    
-        target="_blank">
-        <i class="fab fa-whatsapp"></i><span>WhatsApp<br><small>6241573674</small></span>
-    </a>
-</div>
-        
+    /* --- Estilos para el bloque de info de contacto (de tu imagen) --- */
+    .contact-info-section {
+      padding-top: 60px;
+      padding-bottom: 30px;
+      background: #fff; 
+    }
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start; 
+      margin-bottom: 30px;
+    }
+    .contact-info-icon {
+      flex-shrink: 0;
+      width: 60px;  
+      height: 60px;
+      border-radius: 50%;
+      background: #f0f4f8; 
+      color: var(--accent, #b9a48c); 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px; 
+      margin-right: 20px;
+    }
+    .contact-info-text {
+      flex-grow: 1;
+    }
+    .contact-info-text h5 {
+      font-family: var(--ff-head, "Poppins");
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+      color: var(--ink, #111);
+    }
+    .contact-info-text p {
+      margin-bottom: 0;
+      color: var(--muted, #6b7280);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .contact-info-text a {
+      color: var(--muted, #6b7280);
+      text-decoration: none;
+    }
+    .contact-info-text a:hover {
+      color: var(--accent, #b9a48c);
+    }
+  </style>
+</head>
 
-        <!--Full width header Start-->
-        <div class="full-width-header header-transparent">
-            
-            
-            <!--Header Start-->
-            <header id="rs-header" class="rs-header">
-                <!-- Menu Start -->
-                <div class="menu-area">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <div class="logo-area">
-                                    <a class="mt-20 light" href="/"><img src="../images/white-logo.png" alt="logo"></a>
-                                    <a class="mt-20 dark" href="/"><img src="../images/logo.png" alt="logo"></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-9 text-right">
-                                <div class="rs-menu-area">
-                                    <div class="main-menu mt-20">
-                                        <div class="mobile-menu">
-                                            <a class="rs-menu-toggle">
-                                                <i class="fa fa-bars"></i>
-                                            </a>
-                                        </div>
-                                        <nav class="rs-menu">
-                                            <ul class="nav-menu">
-                                                <li class="current-menu-item current_page_item"> 
-                                                    <a href="/en">Home</a>
-                                                </li>
+<body>
 
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">Procedures</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="facial-surgery.html">Facial Surgery</a></li>
-                                                        <li><a href="breast.html">Breast</a></li>
-                                                        <li><a href="body-contouring.html">Body Contouring</a></li>
-                                                        <li><a href="complementary-treatment.html">Complementary Treatment</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="testimonies.html">Testimonies</a></li>
-                                                <li><a href="emergencies.html">Emergencies</a></li>
-                                                <li><a href="contact.php">Contact</a></li>
-                                                <li><a href="/es">Español</a></li>
-                                            </ul> <!-- //.nav-menu -->
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            
-            
+<nav class="navbar navbar-expand-lg navbar-light navbar-clean fixed-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMain"
+            aria-controls="navMain" aria-expanded="false" aria-label="Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ml-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="./">HOME</a></li>
+        <li class="nav-item dropdown nav-proc"> 
+          <a class="nav-link dropdown-toggle" href="#" id="navProcedimientos" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> PROCEDURES</a>
+          <div class="dropdown-menu dropdown-menu-proc" aria-labelledby="navProcedimientos">
+            <a class="dropdown-item" href="./facial-surgery.html">FACIAL SURGERY</a>
+            <a class="dropdown-item" href="./breast.html">BREAST</a>
+            <a class="dropdown-item" href="./body-contouring.html">BODY CONTOURING</a>
+            <a class="dropdown-item" href="./complementary-treatments.html">NON-INVASIVE TREATMENTS</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./before-after.html">BEFORE & AFTER</a></li>
+        <li class="nav-item active"><a class="nav-link" href="./contact.php">CONTACT</a></li>
+        <li class="nav-item d-none d-lg-inline px-3"><span class="divider"></span></li>
+        <li class="nav-item">
+          <a class="nav-link icon-idioma d-flex align-items-center" href="../es/contacto.php">
+            <img src="../images/mex.jpg" width="30px" alt="es"><span>ES</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="psc-hero" role="banner" aria-label="Contact">
+  <div class="psc-hero__bg" style="--hero-img:url('../images/slider/tratamientos.jpg'); filter: grayscale(50%) brightness(0.8);"></div>
+  <div class="psc-hero__overlay" style="background: linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,.4));"></div>
+  <div class="hero-logo wow animate__animated animate__fadeIn" data-wow-delay=".2s">
+    <img src="../images/white-logo.png" alt="HC Aesthetic Plastic Surgery">
+  </div>
+  <div class="container psc-hero__content">
+    <h1 class="psc-hero__title wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+      CONTACT
+    </h1>
+    <p class="hero-breadcrumb wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+      <a href="./">Home</a> &nbsp;/&nbsp; Contact
+    </p>
+  </div>
+</header>
+
+<section class="section contact-info-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="contact-info-item wow animate__animated animate__fadeInUp" data-wow-delay="0s">
+          <div class="contact-info-icon">
+            <i class="fa fa-map-marker"></i>
+          </div>
+          <div class="contact-info-text">
+            <h5>Address</h5>
+            <p>Carretera Transpeninsular Cabo San Lucas – San Jose del Cabo Km 6.3, Cabo Bello, 23455 Cabo San Lucas, B.C.S.</p>
+          </div>
         </div>
-        <!--Full width header End-->
+        <div class="contact-info-item wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+          <div class="">
+            <i class=""></i>
+          </div>
+          <div class="contact-info-text">
+            <h5></h5>
+            <p><a href="mailto:info@drpedroliteras.com"></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="contact-info-item wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+          <div class="contact-info-icon">
+            <i class="fa fa-whatsapp"></i>
+          </div>
+          <div class="contact-info-text">
+            <h5>Whatsapp</h5>
+            <p><a href="https://wa.me/526241573674" target="_blank">+52 (624) 157 36 74</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="contact-info-item wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+          <div class="contact-info-icon">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <div class="contact-info-text">
+            <h5>Email</h5>
+            <p><a href="mailto:info@drpedroliteras.com">plasticsurgerycabodr@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-		<!-- Main content Start -->
-        <div class="main-content pt-100">
+<!--<div class="contact-info-icon">
+            <i class="fa fa-instagram"></i>
+          </div> 
+          <div class="contact-info-text">
+            <h5>Instagram</h5>
+            <p><a href="https://www.instagram.com/pedroliteras" target="_blank">@pedroliteras</a></p>
+          </div> -->
+
+<section id="contacto" class="section section-contrast">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="h3 mb-2">Schedule your consultation</h2>
+        <p class="text-muted mb-0">Share your information with us, and we will contact you shortly.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <form action="./contact.php" method="post" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Name*</label>
+                <input type="text" name="nombre" class="form-control" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label>Phone*</label>
+                <input type="tel" name="telefono" class="form-control" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email*</label>
+              <input type="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+           <label>I'm interested in</label>
+           <select id="interes" name="interes" class="form-control" required>
+           <option value="">Select</option>
+           <option value="facial">Facial surgery</option>
+           <option value="corporal">Body contouring</option>
+           <option value="no-invasivos">Non-invasive (Lolas Spa)</option>
+           </select>
+           </div>
+
+           <div class="form-group" id="subinteres-wrap" style="display:none;">
+           <label>Procedure</label>
+           <select id="subinteres" name="subinteres" class="form-control">
+           <option value="">I'm not sure / Other</option>
+           </select>
+           </div>
+
+            <div class="form-group">
+              
+              <textarea name="mensaje" rows="5" placeholder="Message" class="form-control"></textarea>
+            </div>
+            <input type="text" name="empresa" class="hp" autocomplete="off">
+            <button type="submit" name="submit" value="submit" class="readon upper">Send</button>
            
 
-            
-                
-            
-            <div>
-                <div class="container-fluid mt-100 mb-100 pt-100">
-                    <div class="row justify-content-center">
-                        <div class="col-md-3">
-                          
-                            <?php
-                            //MENSAJES DE ESTATUS
-                                if(isset($_REQUEST['msg'])) {
-                                    require_once($_SERVER["DOCUMENT_ROOT"]."/modulos/msg.php");
-                                } else
-                            ?>
-                            
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center col-lg-3 mt-150">
-                            <h3>Dr. Héctor Cantú</h3>
-                            <p><b>Email:</b> plasticsurgerycabodr@gmail.com</p>
-                            <h3>BlueNet Hospital</h3>
-                            <p><b>Phone:</b>+52 (624) 157 36 74</p>
-                            <p>Carretera Transpeninsular Cabo San Lucas – San Jose del Cabo Km 6.3, Cabo Bello, 23455 Cabo San Lucas, B.C.S.</p>
-                        </div>
-                        <div class="col-lg-5 pr-30 mt-100">
-                            <div class="contact-wrap">
-                                <div class="sec-title mb-50">
-                                    <h2 class="title mb-33 text-center">Valuation appointments</h2>
-                                    <a class="text-center" target="_blank" href="https://wa.me/+526241573674?text=Hola%20me%20gustaría%20agendar%20una%20cita."><p style="text-decoration:underline;">Contact Us by WhatsApp</p></a>
-                                </div>
-                                <form class="contact-inner-page" action="/php/contacto1.php" method="post">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <label for="">Name*</label>
-                                            <input class="form-control mb-10" type="text" name="nombre" placeholder="" required>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="">Email*</label>
-                                            <input class="form-control mb-10" type="email" name="email" placeholder="" required>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="">Subject*</label>
-                                            <input class="form-control mb-10" type="text" name="tel" placeholder="" required>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <label for="">Subject*</label>
-                                            <input class="form-control mb-10" type="text" name="asunto" placeholder="Subject">
-                                        </div>
-                                        
-                                        <div class="col-md-6">
-                                            <label for="">Interest</label>
-                                            <select class="form-control mb-20" name="interes" id="">
-                                                <option disabled selected>Interest</option>
-                                                <option value="Ritidectomia">Ritidectomia</option>
-                                                <option value="Blefaroplastia">Blefaroplastia</option>
-                                                <option value="Rinoplastia">Rinoplastia</option>
-                                                <option value="Otoplastia">Otoplastia</option>
-                                                <option value="Bichatectomia">Bichatectomia</option>
-                                                <option value="Mentoplastia">Mentoplastia</option>
-                                                <option value="Aumento Mamario">Aumento Mamario</option>
-                                                <option value="Mastopexia">Mastopexia</option>
-                                                <option value="Mamoplastia de Reducción">Mamoplastia de Reducción</option>
-                                                <option value="Abdominoplastia">Abdominoplastia</option>
-                                                <option value="Liposucción">Liposucción</option>
-                                                <option value="Lipotransferencia">Lipotransferencia</option>
-                                                <option value="Rejuvenecimiento Vaginal">Rejuvenecimiento Vaginal</option>
-                                                <option value="Botox®">Botox®</option>
-                                                <option value="Rellenos">Rellenos</option>
-                                                <option value="Skin Booster">Skin Booster</option>
-                                            </select>
-                                        </div>
-                                        
-                                        <div class="col-md-12">
-                                            <textarea class="mb-50 form-control" rows="5" placeholder="Message" name="mensaje" required></textarea>
-                                            <button type="submit" name="submit" value="submit" class="readon upper">Send</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mt-150">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7350.535590280938!2d-109.87000497502645!3d22.90349139005396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4b6987abe3c1%3A0x5750bc7b80958c5b!2sDr.%20H%C3%A9ctor%20Cant%C3%BA%20-%20Plastic%20Surgery%20Cabo!5e0!3m2!1ses!2smx!4v1591133980216!5m2!1ses!2smx" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div> 
-        
-        <!-- Footer Start -->
-        <footer id="rs-footer" class="rs-footer">
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row justify-content-md-center">
-                        <div class="col-lg-3">
-                            <div class="about-widget mt-100">
-                                <ul class=" text-center social-links">
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 mt-50 mb-80">
-                            <div class="copyright text-center">
-                                <p>&copy; 2020 Powered by <a target="_blank" class="text-white" href="http://bananagroup.mx">Banana Group</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Footer End -->
-
-        <!-- start scrollUp  -->
-        <div id="scrollUp">
-            <i class="fa fa-angle-up"></i>
+          </form>
         </div>
 
-        <!-- modernizr js -->
-        <script src="../js/modernizr-2.8.3.min.js"></script>
-        <!-- jquery latest version -->
-        <script src="../js/jquery.min.js"></script>
-        <!-- bootstrap js -->
-        <script src="../js/bootstrap.min.js"></script>
-        <!-- Menu js -->
-        <script src="../js/rsmenu-main.js"></script> 
-        <!-- op nav js -->
-        <script src="../js/jquery.nav.js"></script>
-        <!-- owl.carousel js -->
-        <script src="../js/owl.carousel.min.js"></script>
-        <!-- Slick js -->
-        <script src="../js/slick.min.js"></script>
-        <!-- isotope.pkgd.min js -->
-        <script src="../js/isotope.pkgd.min.js"></script>
-        <!-- imagesloaded.pkgd.min js -->
-        <script src="../js/imagesloaded.pkgd.min.js"></script>
-        <!-- wow js -->
-        <script src="../js/wow.min.js"></script>
-        <!-- Skill bar js -->
-        <script src="../js/skill.bars.jquery.js"></script>
-        <script src="../js/jquery.counterup.min.js"></script>        
-         <!-- counter top js -->
-        <script src="../js/waypoints.min.js"></script>
-        <!-- video js -->
-        <script src="../js/jquery.mb.YTPlayer.min.js"></script>
-        <!-- magnific popup js -->
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <!-- Nivo slider js -->
-        <script src="../inc/custom-slider/js/jquery.nivo.slider.js"></script>       
-        <!-- plugins js -->
-        <script src="../js/plugins.js"></script>
-        <!-- contact form js -->
-        <script src="../js/contact.form.js"></script>
-        <!-- main js -->
-        <script src="../js/main.js"></script>
-        
-        <!-- icons -->
-<script src="https://kit.fontawesome.com/a66c8c86d9.js" crossorigin="anonymous"></script>
-    </body>
+        <div class="col-lg-6">
+          <div class="map-card">
+            <iframe title="Mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7350.535590280938!2d-109.87000497502645!3d22.90349139005396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4b6987abe3c1%3A0x5750bc7b80958c5b!2sDr.%20H%C3%A9ctor%20Cant%C3%BA%20-%20Plastic%20Surgery%20Cabo!5e0!3m2!1ses!2smx!4v1591133980216!5m2!1ses!2smx" loading="lazy"></iframe>
+            <div class="map-data">
+              <h3 class="h6 mb-1">Clinic</h3>
+              <p class="mb-0 text-muted">Carretera Transpeninsular Cabo San Lucas – San Jose del Cabo Km 6.3, Cabo Bello, 23455 Cabo San Lucas, B.C.S.</p>
+              <a class="mt-2 d-inline-block" href="tel:+526241573674"><i class="fa fa-phone mr-2"></i>+52 (624) 157 36 74</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    
+      
+
+    </div>
+  </section>
+
+<footer class="psc-footer">
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col-lg-3 mb-4 mb-lg-0">
+        <a href="./" class="footer-brand d-inline-block">
+          <img src="../images/logo.png" alt="Dr. Pedro Literas" />
+        </a>
+      </div>
+      <div class="col-lg-3 mb-4 mb-lg-0">
+        <nav class="footer-nav">
+          <ul class="list-unstyled">
+            <li><a href="./">Home</a></li>
+            <li><a href="#" data-toggle="dropdown">Procedures</a></li>
+            <li><a href="./before-after.html">Before & After</a></li>
+            <li><a href="./contact.php">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-lg-3 mb-4 mb-lg-0">
+        <h5 class="footer-title">Contact</h5>
+        <ul class="footer-contact list-unstyled">
+          <li>
+            <i class="fa fa-whatsapp"></i>
+            <a href="https://wa.me/52624241323" target="_blank" rel="noopener">+52 (624) 157 36 74</a>
+          </li>
+          <li>
+            <i class="fa fa-map-marker"></i>
+            <span>Carretera Transpeninsular Cabo San Lucas – San Jose del Cabo Km 6.3, Cabo Bello, 23455 Cabo San Lucas, B.C.S.</span>
+          </li>
+          <li>
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:plasticsurgerycabodr@gmail.com">plasticsurgerycabodr@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <div class="footer-map wow animate__animated animate__fadeInUp" data-wow-offset="30" data-wow-duration=".6s">
+          <iframe
+            title="Location"
+            src="http://googleusercontent.com/maps/google.com/0"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-credits">
+    <div class="container text-center">
+      <p>© 2025 Powered by <a target="_blank" class="text-white"
+                                    href="http://bananagroup.mx">Banana Group</a></p>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5216240000000?text=Hola,%20me%20gustaría%20agendar%20una%20valoración."
+   target="_blank" rel="noopener" aria-label="WhatsApp">
+  <i class="fa fa-whatsapp"></i>
+</a>
+
+<script src="../js/site.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/wow.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  if (typeof WOW !== 'undefined') {
+    new WOW({ offset: 30, mobile: true, live: true }).init();
+  }
+});
+</script>
+
+<script>
+    // site.js
+document.addEventListener('DOMContentLoaded', () => {
+  if (typeof WOW !== 'undefined') {
+    new WOW({
+      boxClass:     'wow',
+      animateClass: 'animate__animated',
+      offset:       40,      // dispara un poco antes de entrar a viewport
+      mobile:       true,
+      live:         true
+    }).init();
+  }
+});
+
+// site.js (debajo del init anterior)
+(function () {
+  // Helpers
+  const addWow = (sel, anim, delay = 0, duration = .7) => {
+    document.querySelectorAll(sel).forEach((el, i) => {
+      // evita duplicados
+      if (!el.classList.contains('wow')) el.classList.add('wow');
+      el.classList.add('animate__' + anim);
+      el.setAttribute('data-wow-duration', duration + 's');
+
+      // escalonado para elementos en grupo
+      const d = (typeof delay === 'function') ? delay(i, el) : delay;
+      el.setAttribute('data-wow-delay', (typeof d === 'number' ? d : 0) + 's');
+    });
+  };
+
+  // Hero (títulos, subtítulos, badges/botones)
+  addWow('.hero-title',        'fadeInUp', 0.00);
+  addWow('.hero-sub',          'fadeInUp', 0.10);
+  addWow('.hero-badges .badge','fadeIn',   (i)=>0.20 + i*0.10);
+  addWow('.hero-content .btn', 'fadeInUp', (i)=>0.20 + i*0.10);
+
+  // Encabezados de sección
+  addWow('.section-head h2',   'fadeInUp', 0.00);
+  addWow('.section-head p',    'fadeInUp', 0.05);
+
+  // Cards de “Servicios principales”
+  addWow('.svc-card',          'fadeInUp', (i)=>0.00 + (i%3)*0.10);
+
+  // Secciones alternadas (tu layout actual)
+  addWow('.psc-altrow__copy',  'fadeInUp', 0.00);
+  addWow('.psc-altrow__media', 'fadeInUp', 0.10);
+
+  // Formulario y mapa de contacto
+  addWow('#contacto .contact-form', 'fadeInUp', 0.00);
+  addWow('#contacto .map-card',     'fadeInUp', 0.10);
+
+  // Carrusel de logos / marcas (contenedor y cada logo)
+  addWow('.brands-section .section-title', 'fadeInUp', 0.00);
+  addWow('.brands-swiper',                 'fadeInUp', 0.05);
+  addWow('.brands-swiper .brand-logo',     'fadeIn',   (i)=>0.10 + (i%6)*0.05);
+
+  // Footer (tus 4 columnas)
+  addWow('.psc-footer .col-lg-3:nth-child(1)', 'fadeInUp', 0.00);
+  addWow('.psc-footer .col-lg-3:nth-child(2)', 'fadeInUp', 0.05);
+  addWow('.psc-footer .col-lg-3:nth-child(3)', 'fadeInUp', 0.10);
+  addWow('.psc-footer .col-lg-3:nth-child(4)', 'fadeInUp', 0.15);
+})();
+
+</script>
+</body>
 </html>

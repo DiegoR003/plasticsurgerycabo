@@ -531,7 +531,7 @@ body{ font-family: var(--ff-body); color:var(--ink); letter-spacing: .1px; }
    Botón WhatsApp
 ============================= */
 .wa-float{
-  position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;
+  position:fixed;right:16px;bottom:16px;width:76px;height:76px;border-radius:50%;
   display:flex;align-items:center;justify-content:center;
   background:#25D366;color:#fff;font-size:26px;text-decoration:none;
   box-shadow:0 10px 20px rgba(0,0,0,.15);z-index:1000;
@@ -714,4 +714,14 @@ body{ font-family: var(--ff-body); color:var(--ink); letter-spacing: .1px; }
     left:24px;
   }
   .hero-logo img{ width:130px; }
+}
+
+/* Animación para icono en botones */
+.btn .fa-arrow-right {
+  display: inline-block; /* Necesario para transform */
+  transition: transform 0.3s ease-out;
+}
+
+.btn:hover .fa-arrow-right {
+  transform: translateX(5px); /* Mueve la flecha 5px a la derecha */
 }

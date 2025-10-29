@@ -6,19 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Procedimientos de cirugía facial en Los Cabos, incluyendo Blefaroplastia, Ritidectomía, Otoplastia, Bichatectomía y Mentoplastia.">
 
-  <link rel="stylesheet" type="text/css" href="../style.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/font-awesome.min.css">
-  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  
-  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4/animate.min.css">
-
   <link rel="stylesheet" href="../css/site.css">
-  <link rel="alternate" hreflang="en" href="../en/cirugia-facial.html">
 </head>
 
 <body>
@@ -52,7 +43,7 @@
         <li class="nav-item"><a class="nav-link" href="./contacto.php">CONTACTO</a></li>
         <li class="nav-item d-none d-lg-inline px-3"><span class="divider"></span></li>
         <li class="nav-item">
-          <a class="nav-link icon-idioma d-flex align-items-center" href="../en/cirugia-facial.html">
+          <a class="nav-link icon-idioma d-flex align-items-center" href="../en/facial-surgery.html">
             <img src="../images/bandera_eeuu.png" width="30px" alt="mex"><span>EN</span>
           </a>
         </li>
@@ -189,25 +180,31 @@
 
 
 
-<footer class="psc-footer">
+<!-- FOOTER -->
+  <footer class="psc-footer">
   <div class="container">
     <div class="row align-items-start">
+      <!-- Col 1: Logo -->
       <div class="col-lg-3 mb-4 mb-lg-0">
         <a href="./" class="footer-brand d-inline-block">
           <img src="../images/logo.png" alt="Dr. Pedro Literas" />
         </a>
       </div>
+
+      <!-- Col 2: Navegación -->
       <div class="col-lg-3 mb-4 mb-lg-0">
         <nav class="footer-nav">
           <ul class="list-unstyled">
             <li><a href="./">Inicio</a></li>
             <li><a href="#" data-toggle="dropdown">Procedimientos</a></li>
-           <!-- <li><a href="./contacto.php">No Invasivos</a></li>-->
+            <li><a href="./contacto.php">No Invasivos</a></li>
             <li><a href="./antes-despues.html">Antes y Después</a></li>
             <li><a href="./contacto.php">Contacto</a></li>
           </ul>
         </nav>
       </div>
+
+      <!-- Col 3: Contacto -->
       <div class="col-lg-3 mb-4 mb-lg-0">
         <h5 class="footer-title">Contacto</h5>
         <ul class="footer-contact list-unstyled">
@@ -225,8 +222,11 @@
           </li>
         </ul>
       </div>
+
+      <!-- Col 4: Mapa -->
       <div class="col-lg-3">
         <div class="footer-map wow animate__animated animate__fadeInUp" data-wow-offset="30" data-wow-duration=".6s">
+          <!-- Reemplaza el src por tu embed de Google Maps -->
           <iframe
             title="Ubicación"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7350.535590280938!2d-109.87000497502645!3d22.90349139005396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4b6987abe3c1%3A0x5750bc7b80958c5b!2sDr.%20H%C3%A9ctor%20Cant%C3%BA%20-%20Plastic%20Surgery%20Cabo!5e0!3m2!1ses!2smx!4v1591133980216!5m2!1ses!2smx"
@@ -236,117 +236,32 @@
       </div>
     </div>
   </div>
+
+  <!-- Créditos -->
   <div class="footer-credits">
     <div class="container text-center">
-      <p>© 2025 Powered by <a target="_blank" class="text-white"
+      <p>&copy; 2025 Powered by <a target="_blank" class="text-white"
                                     href="http://bananagroup.mx">Banana Group</a></p>
     </div>
   </div>
 </footer>
+
 
 <a class="wa-float" href="https://wa.me/5216240000000?text=Hola,%20me%20gustaría%20agendar%20una%20valoración."
    target="_blank" rel="noopener" aria-label="WhatsApp">
   <i class="fa fa-whatsapp"></i>
 </a>
 
+<script src="../js/site.js"></script>
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script src="../js/wow.min.js"></script>
-
-<script src="../js/site.js"></script>
-
 <script>
-  new WOW({
-    boxClass: 'wow',
-    // animateClass: 'animate__animated', // <-- Comentado como debe ser
-    offset: 120,
-    mobile: true,
-    live: true
-  }).init();
-</script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  var el = document.querySelector('.brands-swiper');
-  if (!el) return;
-  
-  // ... (código del carrusel de logos) ...
-  
-  new Swiper('.brands-swiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 24,
-    loop: true,
-    allowTouchMove: false,
-    speed: 7000,
-    autoplay: { delay: 0, disableOnInteraction: false },
-    freeMode: true,
-    freeModeMomentum: false
-  });
+document.addEventListener('DOMContentLoaded', function(){
+  if (typeof WOW !== 'undefined') {
+    new WOW({ offset: 30, mobile: true, live: true }).init();
+  }
 });
-</script>
-
-<script>
-(function(){
-  const mapa = {
-    'facial': [
-      'Blefaroplastia', //
-      'Ritidectomía (Estiramiento Facial)', //
-      'Otoplastia', //
-      'Bichatectomia', //
-      'Mentoplastia' //
-    ],
-    'corporal': [
-      'Aumento Mamario (Breast Augmentation)',
-      'Mastopexia (Breast Lift)',
-      'Mamoplastia de Reducción (Breast Reduction)',
-      'Abdominoplastia',
-      'Liposucción',
-      'Lipotrasferencia',
-      'Rejuvenecimiento Vaginal'
-    ],
-    'no-invasivos': ['Botox®', 'Rellenos', /* ... otros ... */]
-  };
-
-  const interes = document.getElementById('interes');
-  const subWrap = document.getElementById('subinteres-wrap');
-  const sub = document.getElementById('subinteres');
-
-  function poblarSub(opciones){
-    sub.innerHTML = '';
-    const def = document.createElement('option');
-    def.value = '';
-    def.textContent = 'No estoy seguro / Otro';
-    sub.appendChild(def);
-
-    (opciones || []).forEach(txt => {
-      const opt = document.createElement('option');
-      opt.value = txt;
-      opt.textContent = txt;
-      sub.appendChild(opt);
-    });
-  }
-
-  interes.addEventListener('change', () => {
-    const val = interes.value;
-    if (mapa[val]) {
-      poblarSub(mapa[val]);
-      subWrap.style.display = 'block';
-    } else {
-      subWrap.style.display = 'none';
-      poblarSub([]);
-    }
-  });
-
-  // Para que se ejecute al cargar la página (ya que pre-seleccionamos 'facial')
-  if (mapa[interes.value]) {
-    poblarSub(mapa[interes.value]);
-    subWrap.style.display = 'block';
-  }
-})();
-</script>
 </script>
 
 <script>
