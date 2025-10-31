@@ -785,3 +785,134 @@ body{ font-family: var(--ff-body); color:var(--ink); letter-spacing: .1px; }
   transform: translateX(5px); /* Mueve la flecha 5px a la derecha */
 }
 
+/* =================================== */
+/* ESTILOS NUEVOS PARA LOLA'S SPA      */
+/* =================================== */
+
+/* 1. Nueva Sección de Introducción */
+/* ---------------------------------- */
+.spa-intro-section {
+  padding-top: 120px;  /* Espacio para la navbar fija */
+  padding-bottom: 80px;
+  background-color: #fdfdfd; /* Un blanco ligeramente cálido */
+}
+
+/* 2. Stack de Imágenes (El "Diseño") */
+/* ---------------------------------- */
+.spa-image-stack {
+  position: relative;
+  min-height: 450px; /* Asegura que haya espacio para las imágenes */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spa-image-stack img {
+  position: absolute;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 4px solid #ffffff;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.spa-image-stack .img-stack-1 {
+  width: 70%;
+  height: 400px;
+  transform: rotate(-4deg) translateX(-20px);
+  z-index: 1;
+}
+
+.spa-image-stack .img-stack-2 {
+  width: 50%;
+  height: 300px;
+  transform: rotate(6deg) translateX(80px) translateY(50px);
+  z-index: 2;
+}
+
+.spa-image-stack .img-stack-3 {
+  width: 200px;
+  height: 200px;
+  transform: rotate(-10deg) translateX(-120px) translateY(100px);
+  z-index: 3;
+}
+
+/* Efecto hover para el stack */
+.spa-image-stack:hover .img-stack-1 { transform: rotate(-2deg) scale(1.02); z-index: 10; }
+.spa-image-stack:hover .img-stack-2 { transform: rotate(3deg) scale(1.02); z-index: 11; }
+.spa-image-stack:hover .img-stack-3 { transform: rotate(-5deg) scale(1.02); z-index: 12; }
+
+
+/* 3. Estilos para Pestañas (Tabs) de Tratamientos */
+/* ----------------------------------------------- */
+.spa-treatment-tabs .nav-pills .nav-link {
+  padding: 15px 20px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  color: #333; /* Color de tu texto principal */
+  margin-bottom: 10px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+/* El botón activo (usa el color --primary de tu sitio si lo tienes) */
+.spa-treatment-tabs .nav-pills .nav-link.active,
+.spa-treatment-tabs .nav-pills .nav-link:hover {
+  background-color: var(--dark, #343a40); /* Re-usa el color de tu botón 'btn-dark' */
+  color: #ffffff;
+  border-color: var(--dark, #343a40);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Contenido de cada pestaña */
+.spa-treatment-content {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.spa-treatment-content img {
+  width: 100%;
+  height: 300px; /* Altura fija para la imagen */
+  object-fit: cover;
+}
+
+.spa-treatment-content .spa-treatment-text {
+  padding: 30px;
+}
+
+.spa-treatment-content .spa-treatment-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 767.98px) {
+  .spa-intro-section {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .spa-image-stack {
+    min-height: 350px;
+    margin-top: 40px;
+  }
+  .spa-image-stack .img-stack-1 { width: 80%; height: 300px; transform: rotate(-3deg); }
+  .spa-image-stack .img-stack-2 { width: 60%; height: 250px; transform: rotate(5deg) translateY(40px); }
+  .spa-image-stack .img-stack-3 { display: none; } /* Ocultar la 3ra imagen en móvil */
+
+  .spa-treatment-tabs .nav-pills {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 20px;
+  }
+  .spa-treatment-tabs .nav-pills .nav-link {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}
