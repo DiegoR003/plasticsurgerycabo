@@ -139,8 +139,10 @@ body{
 .psc-split{
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 520px;
+  /* POR ESTA LÍNEA: */
+  grid-template-columns: 620px 1fr;
+
+  background: #ffffffd9;
   isolation: isolate;
 }
 .psc-split + .psc-split{ margin-top: 36px; }
@@ -148,10 +150,15 @@ body{
 .psc-split__media{
   background: linear-gradient(0deg, rgba(0,0,0,.0), rgba(0,0,0,.0)),
               var(--img) center/cover no-repeat;
-  min-height: 420px;
+  min-height:120px;
+ 
+  
+  
 }
 .psc-split--right{ direction: rtl; }            /* invierte orden visual */
 .psc-split--right > *{ direction:ltr; }         /* mantiene texto normal */
+
+
 
 /* lado de contenido */
 .psc-split__content{
@@ -597,6 +604,69 @@ body{ font-family: var(--ff-body); color:var(--ink); letter-spacing: .1px; }
 }
 .wa-float:hover{transform:translateY(-2px)}
 
+/* =================================== */
+/* CTA PROFESIONAL (Fin de página)     */
+/* =================================== */
+
+.cta-premium-section {
+  position: relative;
+  padding: 100px 0; /* Más espacio vertical */
+  color: #fff;
+  
+  /* --- ¡CAMBIA ESTA IMAGEN DE FONDO! --- */
+  /* Usa una imagen B&N de alta calidad que tengas */
+  background-image: url('../images/banner/banner3.jpeg'); 
+  
+  background-size: cover;
+  background-position: center;
+  
+  /* --- Este es el efecto Parallax --- */
+  background-attachment: fixed; 
+}
+
+.cta-premium-overlay {
+  position: absolute;
+  inset: 0; /* Abarca todo (top:0, left:0, right:0, bottom:0) */
+  
+  /* Usa el color azul oscuro de tu footer para unificar el diseño */
+  /* La opacidad de 0.85 permite ver la imagen pero oscurece el texto */
+  background-color: rgba(38, 48, 67, 0.85); 
+  
+  z-index: 1;
+}
+
+.cta-premium-content {
+  position: relative; /* Se pone por encima del overlay */
+  z-index: 2;
+}
+
+.cta-premium-content h2 {
+   font-weight: 700;
+   font-size: 2.5rem; /* Título más grande */
+   color: #fff;
+}
+
+.cta-premium-content p {
+   font-size: 1.2rem;
+   color: rgba(255,255,255,0.9);
+   max-width: 500px; /* Mejora la legibilidad */
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* Hacemos el botón más grande y moderno */
+.cta-premium-content .btn {
+   font-size: 1.1rem;
+   padding: 12px 30px;
+   border-radius: 50px; /* Botón redondeado "píldora" */
+   transition: all 0.3s ease;
+}
+
+.cta-premium-content .btn:hover {
+  transform: translateY(-2px) scale(1.05); /* Efecto sutil al pasar el mouse */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
 /* =============================
    Botones
 ============================= */
@@ -632,7 +702,7 @@ body{ font-family: var(--ff-body); color:var(--ink); letter-spacing: .1px; }
   border-top:1px solid rgba(0,0,0,.05);
 }
 .psc-footer .footer-brand img{
-  max-width: 240px;
+  max-width: 190px;
   height:auto;
   opacity:.95;
 }
@@ -773,6 +843,11 @@ body{ font-family: var(--ff-body); color:var(--ink); letter-spacing: .1px; }
     left:24px;
   }
   .hero-logo img{ width:130px; }
+}
+
+.img-b-n {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out; /* Opcional: para una transición suave */
 }
 
 /* Animación para icono en botones */
@@ -916,3 +991,4 @@ body{ font-family: var(--ff-body); color:var(--ink); letter-spacing: .1px; }
     margin-right: 10px;
   }
 }
+
