@@ -1320,6 +1320,28 @@ body{ font-family: var(--ff-body); color:var(--ink); letter-spacing: .1px; }
 /* Opcional: reduce un poco en pantallas muy chicas */
 @media (max-width: 360px){
   .navbar .brand-logo img{ height: 38px; }
+
+  /* Tamaño del logo en el footer (general) */
+.psc-footer .footer-brand img {
+  max-width: 50px; /* Ajusta este valor a lo que necesites */
+  height: 30px;
+}
+}
+
+/* Opcional: reduce un poco en pantallas muy chicas */
+@media (max-width: 460px){
+  .navbar .brand-logo img{ height: 38px; }
+
+  /* Tamaño del logo en el footer (general) */
+.psc-footer .footer-brand img {
+  max-width: 130px; /* Ajusta este valor a lo que necesites */
+  height: 160px;
   
 }
+
+
+}
+
+
+
 
