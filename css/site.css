@@ -1340,6 +1340,77 @@ body{ font-family: var(--ff-body); color:var(--ink); letter-spacing: .1px; }
 }
 
 
+
+}
+
+/* Altura del navbar fijo (ajústala si tu navbar es más alto) */
+:root{
+  --navbar-h: 34px; /* 56–72px según tu header */
+}
+
+
+
+
+@media (max-width: 368px){
+  .hc-hero{
+    min-height: 502vh;                 /* hay espacio real para texto + carrusel */
+    padding-bottom: 8rem;
+  }
+
+  /* Texto arriba, imagen abajo */
+  .hc-hero .row{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    height: 900px;
+  }
+
+  .hc-hero__image{
+    margin-top: 34px;
+  }
+
+  /* en móvil evita que el swiper tome height:100% */
+  .hero-swiper{ height: auto !important; }
+
+    /* SUBIR el bloque de texto para que aparezca más arriba */
+  .hc-hero__text{
+    
+    transform: translateY(-35vh);       /* súbelo (usa -4vh a -10vh según veas) */
+  }
+}
+
+
+/* === MOBILE ADJUSTMENTS HERO + SWIPER === */
+@media (max-width: 768px) {
+  .hc-hero {
+    min-height: 120vh;       /* antes 100 o 102 — ahora más espacio */
+    padding-bottom: 4rem;    /* espacio extra para que la imagen respire */
+    display: flex;
+    align-items: flex-start; /* que el contenido comience arriba */
+  }
+
+  /* Subimos el texto un poco */
+  .hc-hero__text {
+    margin-top: 4rem;  /* puedes ajustar (1rem, 3rem…) */
+    text-align: center;
+  }
+
+  /* Imagen (swiper) bien separada debajo */
+  .hc-hero__image {
+    margin-top: 2rem;   /* separa la imagen del texto */
+  }
+
+  /* El swiper no colapsa y se adapta */
+  .hero-swiper {
+    height: auto !important;
+  }
+
+  .hero-swiper .swiper-slide img {
+    width: min(420px, 90%);   /* tamaño cómodo, ajustable */
+    height: auto;
+    display: block;
+    margin: 0 auto;          /* centrado en móvil */
+  }
 }
 
 

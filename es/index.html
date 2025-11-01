@@ -584,6 +584,20 @@
 
 <script src="../js/site.js"></script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  new Swiper('.hero-swiper', {
+    loop: true,
+    effect: 'fade',
+    fadeEffect: { crossFade: true },
+    autoplay: { delay: 3500, disableOnInteraction: false },
+    autoHeight: true,            // <- importante
+    observer: true,
+    observeParents: true
+  });
+</script>
+
 
 
 
