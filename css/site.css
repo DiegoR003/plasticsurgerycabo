@@ -1383,7 +1383,7 @@ body{ font-family: var(--ff-body); color:var(--ink); letter-spacing: .1px; }
 /* === MOBILE ADJUSTMENTS HERO + SWIPER === */
 @media (max-width: 768px) {
   .hc-hero {
-    min-height: 140vh;       /* antes 100 o 102 — ahora más espacio */
+    min-height: 120vh;       /* antes 100 o 102 — ahora más espacio */
     padding-bottom: 4rem;    /* espacio extra para que la imagen respire */
     display: flex;
     align-items: flex-start; /* que el contenido comience arriba */
