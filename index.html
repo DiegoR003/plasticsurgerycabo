@@ -70,52 +70,93 @@
         p { margin-bottom: 1rem; }
         strong, b { font-weight: 600; color: var(--ink); }
         
+/* ... (Todos tus estilos de botones y tipografía de arriba van aquí) ... */
 
-        /* =================================== */
-        /* --- ESTILOS PARA MÓVIL (NUEVO) --- */
-        /* =================================== */
-        @media (max-width: 768px) {
-            
-            /* Ajusta el 'body' para centrar el contenido en móvil */
-            body {
-                /* Centra el texto de todos los hijos */
-                text-align: center;
-                /* Ajusta la imagen de fondo (si la tienes en el body) */
-                /* background-position: center center !important; */
-            }
 
-            /* 'conteiner' es la clase que usaste en tu HTML. */
-            .conteiner {
-                /* Forzamos el ancho a 90% en lugar de un valor fijo */
-                width: 90% !important; 
-                padding: 20px 0 !important; /* Limpia paddings laterales */
-                margin: 0 auto !important; /* Centra el bloque */
-            }
+    /* =================================== */
+    /* --- ESTILOS PARA MÓVIL (MODIFICADO) --- */
+    /* =================================== */
+    @media (max-width: 768px) {
+        
+        /* 1. Ajusta el 'body' para que sea un 'hero' de pantalla completa */
+        html, body {
+            /* Ocupa al menos toda la altura de la pantalla */
+            min-height: 100vh;
             
-            .logo {
-                /* Quita el posicionamiento absoluto en móvil */
-                position: relative !important;
-                top: auto !important;
-                left: auto !important;
-                padding-top: 40px; /* Añade espacio superior */
-                display: flex;
-                justify-content: center;
-                margin-bottom: 20px;
-            }
+            /* Usa Flexbox para centrar todo el contenido */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centra verticalmente */
+            align-items: center;   /* Centra horizontalmente */
             
-            .text {
-                /* El text-align: center del body ya lo centra */
-                margin-bottom: 40px;
-            }
+            /* Asegura que el texto esté centrado */
+            text-align: center;
             
-            /* Contenedor de botones */
-            .language-buttons {
-                display: flex;
-                flex-direction: column; /* Apila los botones */
-                align-items: center; /* Centra los botones apilados */
-                gap: 15px; /* Espacio entre los botones */
-            }
+            /* Agrega padding para que el contenido no toque los bordes */
+            padding: 20px;
+            box-sizing: border-box; /* Para que el padding no desborde */
+            
+            /* 2. ARREGLA LA IMAGEN DE FONDO (asumiendo que está en el body) */
+            /* Esta es la clave: centra la imagen para que se vea la cara */
+            background-position: center center !important; 
+            background-size: cover !important;
+            object-fit: contain;
         }
+
+        /* 3. Limpia el logo (quitando 'left: -100px' y otras reglas) */
+           .logo {
+
+                /* Quita el posicionamiento absoluto en móvil */
+
+                position: relative !important;
+
+                top: auto !important;
+
+                left: -120px !important;
+
+                padding-top: 40px; /* Añade espacio superior */
+
+                display: flex;
+
+                justify-content: center;
+
+                margin-bottom: 700px;
+
+            }
+        
+        /* 4. Limpia el '.conteiner' (el 'body' ya hace este trabajo) */
+        .conteiner {
+            width: 100% !important; 
+            padding: 0 !important; 
+            margin: 0 !important;
+        }
+
+        /* 5. Arregla el centrado del texto */
+        .text {
+            /* Asegura que el texto dentro de este div esté centrado */
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* 6. (Recomendado) Ajusta fuentes para móvil */
+        h1, .h1 {
+            /* Hacemos la fuente un poco más pequeña y responsive en móvil */
+            /* (Tu clamp original hacía la fuente muy grande) */
+            font-size: clamp(2rem, 9vw, 2.75rem) !important;
+        }
+        h3, .h3 {
+             /* Hacemos la fuente un poco más pequeña y responsive en móvil */
+            font-size: clamp(1.1rem, 5vw, 1.5rem) !important;
+        }
+        
+        /* Contenedor de botones (tu código estaba bien) */
+        .language-buttons {
+            display: flex;
+            align-items: center; /* Centra los botones apilados */
+            gap: 15px; /* Espacio entre los botones */
+            
+        }
+    }
     </style>
 </head>
 
