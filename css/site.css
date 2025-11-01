@@ -1414,5 +1414,13 @@ body{ font-family: var(--ff-body); color:var(--ink); letter-spacing: .1px; }
 }
 
 
-
+/* Ejemplo de un CSS que aplicaría a ambos */
+.language-button {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000; /* O sin borde, como prefieras */
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
 

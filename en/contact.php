@@ -83,6 +83,11 @@
 
 <nav class="navbar navbar-expand-lg navbar-light navbar-clean fixed-top">
   <div class="container">
+
+   <!-- LOGO -->
+    <a class="navbar-brand  d-flex align-items-center" >
+      <img  src="../images/logo.png" style="width: 70px; height: 80px;" alt="HC Aesthetic Plastic Surgery">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMain"
             aria-controls="navMain" aria-expanded="false" aria-label="Menu">
       <span class="navbar-toggler-icon"></span>
@@ -101,6 +106,7 @@
             <a class="dropdown-item" href="./complementary-treatments.html">NON-INVASIVE TREATMENTS</a>
           </div>
         </li>
+        <li class="nav-item active"><a class="nav-link" href="./lolas-spa.html">LOLA’S SPA</a></li>
         <li class="nav-item"><a class="nav-link" href="./before-after.html">BEFORE & AFTER</a></li>
         <li class="nav-item active"><a class="nav-link" href="./contact.php">CONTACT</a></li>
         <li class="nav-item d-none d-lg-inline px-3"><span class="divider"></span></li>
@@ -117,9 +123,7 @@
 <header class="psc-hero" role="banner" aria-label="Contact">
   <div class="psc-hero__bg" style="--hero-img:url('../images/slider/tratamientos.jpg'); filter: grayscale(50%) brightness(0.8);"></div>
   <div class="psc-hero__overlay" style="background: linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,.4));"></div>
-  <div class="hero-logo wow animate__animated animate__fadeIn" data-wow-delay=".2s">
-    <img src="../images/white-logo.png" alt="HC Aesthetic Plastic Surgery">
-  </div>
+  
   <div class="container psc-hero__content">
     <h1 class="psc-hero__title wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
       CONTACT

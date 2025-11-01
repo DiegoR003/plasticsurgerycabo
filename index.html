@@ -2,34 +2,139 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Cantú</title>
+    
     <link rel="stylesheet" href="resset.css">
     <link rel="stylesheet" href="portada.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KBS3RKT7');</script>
-<!-- End Google Tag Manager -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KBS3RKT7');</script>
+    <style>
+        /* Estilos de botones (ya los tenías) */
+        .language-button {
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid #000000;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block; /* Añadido para mejor control */
+        }
+        .language-button:hover{
+            background: #CD7F32;
+            color: #ffffff;
+        }
+
+        /* Sistema de Tipografía (ya lo tenías) */
+        :root {
+            /* Tus variables de fuente (asegúrate de definirlas si no están en 'portada.css') */
+             --ff-body: "Inter", sans-serif;
+             --ff-head: "Poppins", sans-serif;
+             --muted: #475569;
+             --ink: #ffffff;
+             --accent: #b9a48c;
+        }
+        
+        body {
+            font-family: var(--ff-body);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--muted);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            margin: 0; /* Asegura que no haya márgenes por defecto */
+        }
+        h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+            font-family: var(--ff-head);
+            font-weight: 700;
+            color: var(--ink);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.75rem;
+        }
+        h1, .h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+        }
+        h3, .h3 {
+            font-size: clamp(1.5rem, 3vw, 1.75rem);
+            font-weight: 600;
+        }
+        p { margin-bottom: 1rem; }
+        strong, b { font-weight: 600; color: var(--ink); }
+        
+
+        /* =================================== */
+        /* --- ESTILOS PARA MÓVIL (NUEVO) --- */
+        /* =================================== */
+        @media (max-width: 768px) {
+            
+            /* Ajusta el 'body' para centrar el contenido en móvil */
+            body {
+                /* Centra el texto de todos los hijos */
+                text-align: center;
+                /* Ajusta la imagen de fondo (si la tienes en el body) */
+                /* background-position: center center !important; */
+            }
+
+            /* 'conteiner' es la clase que usaste en tu HTML. */
+            .conteiner {
+                /* Forzamos el ancho a 90% en lugar de un valor fijo */
+                width: 90% !important; 
+                padding: 20px 0 !important; /* Limpia paddings laterales */
+                margin: 0 auto !important; /* Centra el bloque */
+            }
+            
+            .logo {
+                /* Quita el posicionamiento absoluto en móvil */
+                position: relative !important;
+                top: auto !important;
+                left: auto !important;
+                padding-top: 40px; /* Añade espacio superior */
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            
+            .text {
+                /* El text-align: center del body ya lo centra */
+                margin-bottom: 40px;
+            }
+            
+            /* Contenedor de botones */
+            .language-buttons {
+                display: flex;
+                flex-direction: column; /* Apila los botones */
+                align-items: center; /* Centra los botones apilados */
+                gap: 15px; /* Espacio entre los botones */
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBS3RKT7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBS3RKT7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="logo">
-        <img src="logo.png" alt="">
+        <img src="logo.png" alt="Logo Dr. Hector Cantú">
     </div>
+    
     <div class="conteiner">
         <div class="text">
             <h1>Dr. Hector Cantú</h1>
-            <h3 class="pt-40">Aesthetic Plastic Surgery</h3>
+            <h3>Aesthetic Plastic Surgery</h3>
         </div> 
-        <div class="pt-40">
-            <a href="en"><p class="button">English</p></a>
-            <a href="es"><p class="button">Español</p></a>
+        
+        <div class="language-buttons">
+            <a href="en" class="language-button">English</a>
+            <a href="es" class="language-button">Español</a>
         </div>
     </div>
     
