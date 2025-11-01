@@ -103,7 +103,7 @@
             <a class="dropdown-item" href="./facial-surgery.html">FACIAL SURGERY</a>
             <a class="dropdown-item" href="./breast.html">BREAST</a>
             <a class="dropdown-item" href="./body-contouring.html">BODY CONTOURING</a>
-            <a class="dropdown-item" href="./complementary-treatments.html">NON-INVASIVE TREATMENTS</a>
+            <a class="dropdown-item" href="./complementary-treatment.html">NON-INVASIVE TREATMENTS</a>
           </div>
         </li>
         <li class="nav-item active"><a class="nav-link" href="./lolas-spa.html">LOLA’S SPA</a></li>
