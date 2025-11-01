@@ -582,10 +582,10 @@ body{ font-family: var(--ff-body); color:var(--ink); letter-spacing: .1px; }
 .hp{display:none !important}
 
 .map-card{
-  border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;
+  border:1px solid var(--line);border-radius:1px;overflow:hidden;background:#fff;
 }
-.map-card iframe{width:100%;height:260px;border:0;display:block}
-.map-data{padding:14px}
+.map-card iframe{width:100%;height:100%; min-width: 900px; min-height: 400px; border:0;display:block}
+.map-data{padding:14px; width: 100%;}
 
 /* =============================
    Footer
@@ -766,9 +766,9 @@ body{ font-family: var(--ff-body); color:var(--ink); letter-spacing: .1px; }
   padding:10px;
 }
 .brand-logo{
-  width: 140px; height: 80px;
+  width: 140px; height: 100px;
   object-fit: contain; object-position: center;
-  filter: grayscale(100%) contrast(1.05);  /* B/N elegante */
+ /*  filter: grayscale(100%) contrast(1.05);  B/N elegante */
   opacity:.9; transition: transform .25s ease, opacity .25s ease, filter .25s ease;
 }
 .brand-logo:hover{ opacity:1; filter: grayscale(0%); transform: translateY(-2px); }
@@ -990,5 +990,336 @@ body{ font-family: var(--ff-body); color:var(--ink); letter-spacing: .1px; }
     margin-bottom: 0;
     margin-right: 10px;
   }
+}
+
+/* ===== HERO estilo “landing limpia” ===== */
+:root{
+  /* ajusta a tu paleta */
+  --hc-accent: #4C66FF;          /* color de acento para la segunda línea del título */
+  --hc-bg-dark: #0f1218;         /* tono base del overlay */
+  --hc-text: #ffffff;
+  --hc-text-muted: #cfd6e4;
+}
+
+.hc-hero{
+  position: relative;
+  min-height: 35vh; /* Puedes usar 65vh o 70vh si lo quieres más pequeño */
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(90deg, #E3E4E8 0%, #C9CACE 100%); /* color corregido parecido al original */
+  color: var(--hc-text);
+}
+
+
+/* Fondo: usa tu misma foto de “rostro close-up” para conservar el look */
+.hc-hero__bg{
+  position: absolute; inset: 0;
+  background:
+
+    url("../images/banner/home1.png") center/cover no-repeat;
+  
+  transform: translateZ(0);
+}
+
+.hc-hero__overlay{
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, var(--hc-bg-dark) 0%, rgba(15,18,24,0.55) 46%, rgba(15,18,24,0.15) 100%);
+}
+
+.hc-hero__inner{
+  position: relative;
+  z-index: 2;
+  padding-top: clamp(92px, 9vh, 120px);  /* despeje del navbar */
+  padding-bottom: clamp(40px, 8vh, 80px);
+}
+
+/* Tipografía del héroe */
+.hc-eyebrow{
+  letter-spacing:.12em;
+  text-transform: uppercase;
+  opacity:.85;
+  font-weight:600;
+  font-size:.9rem;
+  color: #ffffff;
+  margin-bottom:.75rem;
+}
+
+.hc-title{
+  font-weight: 800;
+  font-size: clamp(2.2rem, 5vw + .6rem, 4.25rem);
+  margin: 0 0 .35rem;
+}
+
+.hc-title--accent{
+  color: var(--hc-accent);
+}
+
+.hc-sub{
+  color: var(--hc-text-muted);
+  font-size: clamp(1rem, 1.2vw + .8rem, 1.25rem);
+  max-width: 50ch;
+  margin: 0;
+}
+
+/* Botones */
+.hc-hero .btn{
+  padding: .8rem 1.2rem;
+  border-width: 2px;
+  border-radius: .75rem;
+}
+
+/* Badges */
+.hc-badges{
+  list-style:none; padding:0; margin:0;
+  display:flex; flex-wrap:wrap; gap:.5rem;
+}
+.hc-badges li{
+  font-size:.9rem; color: var(--hc-text);
+  border:1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.06);
+  backdrop-filter: blur(6px);
+  padding:.5rem .75rem; border-radius: 999px;
+}
+
+/* Imagen de la derecha (si usas PNG recortado) */
+.hc-figure{ position: relative; height: 62vh; display:flex; align-items:end; justify-content:center; }
+.hc-figure__img{
+  max-height: 100%;
+  width: auto;
+  filter: drop-shadow(0 30px 60px rgba(0,0,0,.45));
+  transform: translateY(8px);
+}
+
+/* Responsivo */
+@media (max-width: 991.98px){
+  .hc-hero__overlay{
+    background: linear-gradient(180deg, rgba(15,18,24,.75) 0%, rgba(15,18,24,.55) 40%, rgba(15,18,24,.2) 100%);
+  }
+  .hc-sub{ max-width: 42ch; }
+}
+
+/* Sección Hero */
+.hc-hero {
+  position: relative;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(90deg, #E6E7EA 0%, #C6C7CC 100%);
+}
+
+/* Overlay opcional si quieres efecto de oscuridad suave */
+.hc-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 40%, transparent 100%);
+  z-index: 1;
+}
+
+/* Texto */
+.hc-hero__text {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.hc-hero__text h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.hc-eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+/* Imagen de modelo */
+.hc-hero__image {
+  position: relative;
+  z-index: 2;      /* ENCIMA DEL FONDO */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.hc-hero__image img {
+  max-height: 60vh;
+  object-fit: contain;
+  pointer-events: none;
+  
+}
+
+
+
+/* Carrusel al frente */
+.hero-swiper{
+  width: 100%;
+  height: min(92vh, 760px);   /* alto del bloque de imagen */
+  min-height: 420px;
+}
+
+/* Centrar la imagen y mantener proporción */
+.hero-swiper .swiper-slide{
+  display: grid;
+  place-items: end center;
+}
+
+.hero-swiper img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;         /* que no se recorte */
+  pointer-events: none;        /* no bloquear clics del hero */
+  user-select: none;
+}
+
+/* Suaviza el borde izquierdo de la imagen con un degradado muy sutil (opcional) */
+.hc-hero__image::before{
+  content:"";
+  position:absolute; inset:0;
+ background: transparent !important;
+  pointer-events:none;
+  
+}
+
+/* ===== Paleta sobria/profesional ===== */
+:root{
+  --hc-accent: #2B4C7E;   /* azul petróleo elegante para acentos */
+  --hc-eyebrow: #A9B6C6;  /* gris azulado para la ceja */
+  --hc-text:    #E9EEF3;  /* texto claro sobre fondo oscuro */
+  --hc-chip-bg: rgba(255,255,255,0.08);
+  --hc-chip-br: rgba(255,255,255,0.25);
+  --hc-chip-tx: rgba(255,255,255,0.92);
+}
+
+
+
+/* Oscurecer sutil el lado izquierdo para contraste del texto */
+.hc-hero__overlay{
+  position:absolute; inset:0;
+  background: linear-gradient(90deg, rgba(9,15,25,0.55) 0%, rgba(9,15,25,0.35) 45%, rgba(9,15,25,0.00) 80%);
+  pointer-events: none;
+}
+
+/* Tipos */
+.hc-eyebrow{
+  letter-spacing:.12em;
+  font-weight: 600;
+  color: var(--hc-eyebrow);
+  margin-bottom:.75rem;
+  text-transform: uppercase;
+}
+
+.hc-hero h1{
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 0 0 .65rem 0;
+}
+
+.hc-hero h1 span{ display: inline-block; }
+
+
+.hc-sublead{
+  color: #ffffff;
+  
+  max-width: 46ch;
+}
+
+/* Botones (ligero refinamiento) */
+.hc-hero .btn{
+  padding: .85rem 1.15rem;
+  border-radius: 14px;
+  font-weight: 600;
+}
+.hc-hero .btn-outline-light{
+  border-color: rgba(255,255,255,.6);
+  color: #fff;
+}
+.hc-hero .btn-outline-light:hover{
+  background: rgba(255,255,255,.12);
+}
+
+/* Imagen a la derecha al frente */
+.hc-hero__image{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.hc-hero__image img{
+  max-height: min(88vh, 780px);
+  object-fit: contain;
+  translate: 6% 0;         /* empuja un poco a la derecha */
+  filter: drop-shadow(0 25px 50px rgba(0,0,0,.25));
+}
+
+/* ===== Chips / credenciales ===== */
+.hc-hero__badges{
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+.badge-chip{
+  display: inline-flex;
+  align-items: center;
+  padding: .5rem .9rem;
+  border-radius: 999px;
+  font-size: .9rem;
+  line-height: 1;
+  color: var(--hc-chip-tx);
+  background: var(--hc-chip-bg);
+  border: 1px solid var(--hc-chip-br);
+  backdrop-filter: blur(6px);           /* efecto vidrio */
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 1px 0 rgba(255,255,255,.06) inset, 0 6px 18px rgba(0,0,0,.16);
+}
+
+/* Responsivo */
+@media (max-width: 991.98px){
+  .hc-hero{ padding-top: 5rem; }
+  .hc-hero__image{ justify-content: center; margin-top: 2rem; }
+  .hc-hero__image img{ translate: 0 0; max-height: 520px; }
+}
+
+/* Tamaño del logo en el navbar */
+.navbar .brand-logo img{
+  height: 44px;        /* Ajusta entre 36–48px según te guste */
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Quita padding extra del enlace del brand para que no “crezca” */
+.navbar .brand-logo{
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  line-height: 1;
+}
+
+/* — Orden/posición responsive —
+   Desktop: logo a la izquierda (default).
+   Móvil: hamburguesa a la izquierda, menú colapsado y LOGO a la derecha. */
+@media (max-width: 991.98px){ /* < LG */
+  .navbar .container{
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-toggler{ order: 0; }     /* Izquierda */
+  #navMain{ order: 1; }            /* Centro (colapsado) */
+  .navbar .brand-logo{
+    order: 2;                      /* Derecha */
+    margin-left: auto;             /* Empuja totalmente a la derecha */
+  }
+}
+
+/* Opcional: reduce un poco en pantallas muy chicas */
+@media (max-width: 360px){
+  .navbar .brand-logo img{ height: 38px; }
+  
 }
 

@@ -30,10 +30,10 @@
   <!-- Header / Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light navbar-clean fixed-top">
     <div class="container">
-      <!--<a class="navbar-brand d-flex align-items-center" href="./">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text ml-2">Plastic Surgery Cabo</span>
-      </a> -->
+      <!-- LOGO -->
+    <a class="navbar-brand  d-flex align-items-center" >
+      <img  src="../images/logo.png" style="width: 70px; height: 80px;" alt="HC Aesthetic Plastic Surgery">
+    </a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMain"
               aria-controls="navMain" aria-expanded="false" aria-label="Menu">
@@ -53,7 +53,7 @@
               <a class="dropdown-item" href="./complementary-treatment.html">NON-INVASIVE TREATMENTS</a>
             </div>
           </li>
-          <!--<li class="nav-item"><a class="nav-link" href="./tratamientos-complementarios.html">NON-INVASIVE</a></li>-->
+         <li class="nav-item"><a class="nav-link" href="./lolas-spa.html">LOLA’S SPA</a></li>
           <li class="nav-item"><a class="nav-link" href="./tratamientos-complementarios.html">BEFORE & AFTER</a></li>
           <!-- <li class="nav-item"><a class="nav-link" href="./testimonios.html">REVIEWS</a></li> -->
           <li class="nav-item"><a class="nav-link" href="./contact.php">CONTACT</a></li>
@@ -69,39 +69,56 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header class="hero-hero">
-    <div class="hero-bg" role="img" aria-label="Clinic and surgeon in black and white"></div>
-    <div class="hero-overlay"></div>
-       <!-- Logo flotante -->
-  <div class="hero-logo wow animate__animated animate__fadeIn" data-wow-delay=".2s">
-    <img src="../images/white-logo.png" alt="HC Aesthetic Plastic Surgery">
-  </div>
-    <div class="container hero-content">
-      <div class="row">
-        <div class="col-lg-8">
-          <h1 class="display-4 hero-title wow animate__animated animate__fadeInUp" data-wow-duration=".7s">Facial rejuvenation in Los Cabos</h1>
-          <p class="psc-eyebrow wow animate__animated animate__fadeInUp" data-wow-delay=".1s" data-wow-duration=".7s">
-            Plastic surgery and <strong>non-invasive treatments</strong> with a natural look and fast recovery.
-          </p>
+ <!-- ===== HERO (new) ===== -->
+<header class="hc-hero">
+  <div class="hc-hero__overlay"></div>
 
-          <div class="d-flex flex-wrap mt-3">
-            <a href="#contacto" class="btn btn-primary btn-agendar mr-2 mb-2 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">Book a consultation</a>
-            <a href="./cirugia-facial.html" class="btn btn-outline-light mb-2 wow animate__animated animate__fadeInUp" data-wow-delay=".25s">See services</a>
-          </div>
+  <div class="container h-100">
+    <div class="row align-items-center h-100">
+      <!-- Text on the left -->
+      <div class="col-lg-6 hc-hero__text">
+        <p class="hc-eyebrow" style="color: #ffffff;">PLASTIC SURGERY IN LOS CABOS</p>
+        <h1>
+          <span>Dream-Like</span><br>
+          <span class="hc-accent">Facial</span><br>
+          <span class="hc-accent">Rejuvenation</span>
+        </h1>
+        <p class="hc-sublead">
+          Excellence with certified surgeons. Natural-looking results and a smooth recovery.
+        </p>
 
-          <div class="hero-badges mt-4">
-            <span class="badge badge-soft wow animate__animated animate__fadeIn" data-wow-delay=".35s">US & Mexico board certified</span>
-            <span class="badge badge-soft wow animate__animated animate__fadeIn" data-wow-delay=".45s">15+ years of experience</span>
-            <span class="badge badge-soft wow animate__animated animate__fadeIn" data-wow-delay=".55s">100% bilingual care</span>
+        <div class="d-flex gap-3 mt-4 flex-wrap">
+          <a href="./contact.php" class="btn btn-primary btn-agendar mr-2">Book your consultation</a>
+          <a href="#services" class="btn btn-outline-light">View services</a>
+        </div>
+
+        <!-- Badges -->
+        <div class="hc-hero__badges mt-3">
+          <span class="badge-chip">Certified in the U.S. & Mexico</span>
+          <span class="badge-chip">15+ years of experience</span>
+          <span class="badge-chip">100% bilingual care</span>
+        </div>
+      </div>
+
+      <!-- Image in front (not as background) -->
+      <div class="col-lg-6 hc-hero__image img-b-n">
+        <div class="hero-swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../images/banner/home22.png" alt="Model 1"></div>
+            <div class="swiper-slide"><img src="../images/banner/home1.png" alt="Model 2"></div>
+            <div class="swiper-slide"><img src="../images/banner/home44.png" style="padding-top: 100px;" alt="Model 3"></div>
+            <div class="swiper-slide"><img src="../images/banner/home55.png" style="padding-top: 110px;" alt="Model 4"></div>
           </div>
         </div>
       </div>
+
     </div>
-  </header>
+  </div>
+</header>
+
 
   <!-- FEATURED SERVICES -->
-  <section class="section section-tight">
+  <section class="section section-tight" id="services">
     <div class="container">
       <div class="section-head">
         <h2 class="h3 mb-2 wow animate__animated animate__fadeInUp" data-wow-duration=".7s">Featured services</h2>
@@ -114,7 +131,7 @@
         <!-- Card 1 -->
         <div class="col-md-6 col-lg-4 mb-4">
           <a class="svc-card" href="./cirugia-facial.html">
-            <div class="svc-media" style="background-image:url('../images/servicios/mini-facelift/corregido1.jpeg')"></div>
+            <div class="svc-media" style="background-image:url('../images/servicios/mini-facelift/corregido2.jpeg')"></div>
             <div class="svc-body">
               <h3 class="h5 mb-1">Mini facelift</h3>
               <p class="svc-text">Early, refreshed results—no need to “wait until it shows”.</p>
@@ -125,7 +142,7 @@
         <!-- Card 2 -->
         <div class="col-md-6 col-lg-4 mb-4">
           <a class="svc-card" href="./cirugia-facial.html">
-            <div class="svc-media" style="background-image:url('../images/servicios/facelift/corregido2.jpeg')"></div>
+            <div class="svc-media" style="background-image:url('../images/servicios/facelift/corregido2.webp')"></div>
             <div class="svc-body">
               <h3 class="h5 mb-1">Deep plane facelift</h3>
               <p class="svc-text">Repositioning structures with a natural-looking approach.</p>
@@ -160,10 +177,12 @@
             <li>Exclusive technology in Los Cabos.</li>
             <li>Focus on skin quality and collagen.</li>
           </ul>
-          <a href="../en/lolas-spa.html" class="btn btn-dark mt-3">Discover Lolas Spa</a>
+          <a href="../en/lolas-spa.html" class="btn btn-primary btn-agendar mt-2">Discover Lolas Spa</a>
         </div>
-        <div class="col-lg-6 " data-wow-duration=".7s">
-          <div class="spa-media" role="img" aria-label="Non-invasive treatments in black and white"></div>
+        <!-- Imagen a la derecha -->
+      <div class="col-lg-6 d-flex justify-content-center">
+        <div class="spa-preview img-b-n">
+          <img src="../images/servicios/lola´s-spa/REVERSE_FACIAL.jpg" alt="Lola’s Spa" class="img-fluid spa-img">
         </div>
       </div>
     </div>
@@ -404,7 +423,7 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="col-lg-5 mb-4 mb-lg-0">
           <form action="./contacto.php" method="post" class="contact-form" novalidate>
             <div class="form-row">
               <div class="form-group col-md-6">
@@ -453,17 +472,18 @@
           </form>
         </div>
 
-        <div class="col-lg-6">
-          <div class="map-card">
-            <iframe title="Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7350.535590280938!2d-109.87000497502645!3d22.90349139005396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4b6987abe3c1%3A0x5750bc7b80958c5b!2sDr.%20H%C3%A9ctor%20Cant%C3%BA%20-%20Plastic%20Surgery%20Cabo!5e0!3m2!1ses!2smx!4v1591133980216!5m2!1ses!2smx" loading="lazy"></iframe>
-            <div class="map-data">
-              <h3 class="h6 mb-1">Clinic</h3>
-              <p class="mb-0 text-muted">Carretera Transpeninsular Cabo San Lucas – San Jose del Cabo Km 6.3, Cabo Bello, 23455 Cabo San Lucas, B.C.S.</p>
-              <a class="mt-2 d-inline-block" href="tel:+526241234567"><i class="fa fa-phone mr-2"></i>+52 (624) 157 36 74</a>
-            </div>
+        <div class="col-lg-7">
+        <div class="map-card">
+          <iframe title="Mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7350.535590280938!2d-109.87000497502645!3d22.90349139005396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4b6987abe3c1%3A0x5750bc7b80958c5b!2sDr.%20H%C3%A9ctor%20Cant%C3%BA%20-%20Plastic%20Surgery%20Cabo!5e0!3m2!1ses!2smx!4v1591133980216!5m2!1ses!2smx" loading="lazy" style="width: 100%; height: 450px; border:0;"></iframe>
+          
+          <div class="map-data">
+            <h3 class="h6 mb-1">Clínica</h3>
+            <p class="mb-0 text-muted">Carretera Transpeninsular Cabo San Lucas – San Jose del Cabo Km 6.3, Cabo Bello, 23455 Cabo San Lucas, B.C.S.</p>
+            <a class="mt-2 d-inline-block" href="tel:+526241234567"><i class="fa fa-phone mr-2"></i>+52 (624) 157 36 74</a>
           </div>
         </div>
       </div>
+    </div>
 
     </div>
   </section>

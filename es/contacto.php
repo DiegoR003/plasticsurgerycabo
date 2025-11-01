@@ -89,9 +89,10 @@
 
 <nav class="navbar navbar-expand-lg navbar-light navbar-clean fixed-top">
   <div class="container">
-    <!--<a class="navbar-brand" href="./">
-      <img src="../images/logo.png" alt="Plastic Surgery Cabo Logo" style="max-height: 40px; filter: grayscale(100%) invert(1);"> 
-    </a> -->
+    <!-- LOGO -->
+    <a class="navbar-brand  d-flex align-items-center" >
+      <img  src="../images/logo.png" style="width: 50px; height: 60px;" alt="HC Aesthetic Plastic Surgery">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMain"
             aria-controls="navMain" aria-expanded="false" aria-label="Menú">
       <span class="navbar-toggler-icon"></span>
@@ -127,9 +128,7 @@
 <header class="psc-hero" role="banner" aria-label="Contacto">
   <div class="psc-hero__bg" style="--hero-img:url('../images/slider/tratamientos.jpg'); filter: grayscale(50%) brightness(0.8);"></div>
   <div class="psc-hero__overlay" style="background: linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,.4));"></div>
-  <div class="hero-logo wow animate__animated animate__fadeIn" data-wow-delay=".2s">
-    <img src="../images/white-logo.png" alt="HC Aesthetic Plastic Surgery">
-  </div>
+  
   <div class="container psc-hero__content">
     <h1 class="psc-hero__title wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
       CONTACTO
@@ -193,30 +192,30 @@
 
 <!-- CONTACTO -->
   <section id="contacto" class="section section-contrast">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="h3 mb-2">Agenda tu valoración</h2>
-        <p class="text-muted mb-0">Compártenos tus datos y te contactaremos a la brevedad.</p>
-      </div>
+  <div class="container">
+    <div class="section-head">
+      <h2 class="h3 mb-2">Agenda tu valoración</h2>
+      <p class="text-muted mb-0">Compártenos tus datos y te contactaremos a la brevedad.</p>
+    </div>
 
-      <div class="row">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <form action="./contacto.php" method="post" class="contact-form" novalidate>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label>Nombre*</label>
-                <input type="text" name="nombre" class="form-control" required>
-              </div>
-              <div class="form-group col-md-6">
-                <label>Teléfono*</label>
-                <input type="tel" name="telefono" class="form-control" required>
-              </div>
+    <div class="row">
+      <div class="col-lg-5 mb-4 mb-lg-0">
+        <form action="./contacto.php" method="post" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label>Nombre*</label>
+              <input type="text" name="nombre" class="form-control" required>
             </div>
-            <div class="form-group">
-              <label>Correo*</label>
-              <input type="email" name="email" class="form-control" required>
+            <div class="form-group col-md-6">
+              <label>Teléfono*</label>
+              <input type="tel" name="telefono" class="form-control" required>
             </div>
-            <div class="form-group">
+          </div>
+          <div class="form-group">
+            <label>Correo*</label>
+            <input type="email" name="email" class="form-control" required>
+          </div>
+          <div class="form-group">
            <label>Interés</label>
            <select id="interes" name="interes" class="form-control" required>
            <option value="">Selecciona</option>
@@ -224,43 +223,40 @@
            <option value="corporal">Contorno corporal</option>
            <option value="no-invasivos">No invasivos (Lolas Spa)</option>
            </select>
-           </div>
+          </div>
 
-            <!-- Aparece dinámicamente -->
-           <div class="form-group" id="subinteres-wrap" style="display:none;">
+          <div class="form-group" id="subinteres-wrap" style="display:none;">
            <label>Procedimiento</label>
            <select id="subinteres" name="subinteres" class="form-control">
            <option value="">No estoy seguro / Otro</option>
            </select>
-           </div>
+          </div>
 
-            <div class="form-group">
-             
-              <textarea name="mensaje" rows="5" placeholder="Mensaje" class="form-control"></textarea>
-            </div>
-            <!-- Honeypot anti-spam -->
-            <input type="text" name="empresa" class="hp" autocomplete="off">
-            <button type="submit" name="submit" value="submit" class="readon upper">Enviar</button>
-           
+          <div class="form-group">
+            
+            <textarea name="mensaje" rows="5" placeholder="Mensaje" class="form-control"></textarea>
+          </div>
+          <input type="text" name="empresa" class="hp" autocomplete="off">
+          <button type="submit" name="submit" value="submit" class="readon  ">Enviar</i></button>
+          
+        </form>
+      </div>
 
-          </form>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="map-card">
-            <!-- Reemplaza el src con tu mapa -->
-            <iframe title="Mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7350.535590280938!2d-109.87000497502645!3d22.90349139005396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4b6987abe3c1%3A0x5750bc7b80958c5b!2sDr.%20H%C3%A9ctor%20Cant%C3%BA%20-%20Plastic%20Surgery%20Cabo!5e0!3m2!1ses!2smx!4v1591133980216!5m2!1ses!2smx" loading="lazy"></iframe>
-            <div class="map-data">
-              <h3 class="h6 mb-1">Clínica</h3>
-              <p class="mb-0 text-muted">Carretera Transpeninsular Cabo San Lucas – San Jose del Cabo Km 6.3, Cabo Bello, 23455 Cabo San Lucas, B.C.S.</p>
-              <a class="mt-2 d-inline-block" href="tel:+526241234567"><i class="fa fa-phone mr-2"></i>+52 (624) 157 36 74</a>
-            </div>
+      <div class="col-lg-7">
+        <div class="map-card">
+          <iframe title="Mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7350.535590280938!2d-109.87000497502645!3d22.90349139005396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4b6987abe3c1%3A0x5750bc7b80958c5b!2sDr.%20H%C3%A9ctor%20Cant%C3%BA%20-%20Plastic%20Surgery%20Cabo!5e0!3m2!1ses!2smx!4v1591133980216!5m2!1ses!2smx" loading="lazy" style="width: 100%; height: 450px; border:0;"></iframe>
+          
+          <div class="map-data">
+            <h3 class="h6 mb-1">Clínica</h3>
+            <p class="mb-0 text-muted">Carretera Transpeninsular Cabo San Lucas – San Jose del Cabo Km 6.3, Cabo Bello, 23455 Cabo San Lucas, B.C.S.</p>
+            <a class="mt-2 d-inline-block" href="tel:+526241234567"><i class="fa fa-phone mr-2"></i>+52 (624) 157 36 74</a>
           </div>
         </div>
       </div>
-
     </div>
-  </section>
+
+  </div>
+</section>
 
 <!-- FOOTER -->
   <footer class="psc-footer">

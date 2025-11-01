@@ -110,3 +110,20 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 })();
 
+// Carrusel del hero (imagen al frente)
+(function () {
+  var el = document.querySelector('.hero-swiper');
+  if (!el || typeof Swiper === 'undefined') return;
+
+  new Swiper('.hero-swiper', {
+    loop: true,
+    effect: 'fade',                 // transición elegante
+    fadeEffect: { crossFade: true },
+    speed: 800,
+    autoplay: {
+      delay: 3200,
+      disableOnInteraction: false
+    },
+    allowTouchMove: false,          // fijo para hero (opcional)
+  });
+})();
