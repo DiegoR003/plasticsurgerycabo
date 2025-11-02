@@ -296,7 +296,7 @@
           <ul class="footer-contact list-unstyled">
             <li>
               <i class="fa fa-whatsapp"></i>
-              <a href="https://wa.me/52624241323" target="_blank" rel="noopener">+52 (624) 157 36 74</a>
+              <a href="https://wa.me/526241573674" target="_blank" rel="noopener">+52 (624) 157 36 74</a>
             </li>
             <li>
               <i class="fa fa-map-marker"></i>
@@ -321,10 +321,10 @@
   </footer>
 
 
-<a class="wa-float" href="https://wa.me/5216240000000?text=Hola,%20me%20gustaría%20agendar%20una%20valoración."
-   target="_blank" rel="noopener" aria-label="WhatsApp">
-  <i class="fa fa-whatsapp"></i>
-</a>
+<a class="wa-float" href="https://wa.me/526241573674?text=Hi,%20I%20would%20like%20to%20schedule%20a%20consultation."
+     target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa fa-whatsapp"></i>
+  </a>
 
 <script src="../js/site.js"></script>
 <script src="../js/jquery.min.js"></script>
